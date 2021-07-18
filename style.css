@@ -100,16 +100,21 @@ button.btn img {
 
 div.balão {
     background-color: var(--Very-Dark-Grayish-Blue);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 60px;
     width: 300px;
     position: absolute;
-    right: -135px;
+    right: -130px;
     top: -70px;
     border-radius: 10px;
+    transition: height 2s;
 
+}
+
+.active {
+    display: flex !important;
 }
 
 div.balão::after {
@@ -148,6 +153,8 @@ div.balão a i {
 @media screen and (max-width: 900px ) {
     body {
         display: block;
+        width: auto;
+        height: auto;
     }
     main.cartão {
         margin: 30px auto;
