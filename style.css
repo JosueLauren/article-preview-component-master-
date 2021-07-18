@@ -13,6 +13,129 @@
     font-family: "Manrope", sans-serif;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+main.cartão {
+    width: 70%;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.2);
+}
+
+div.imagem {
+    width: 40%;
+}
+
+div.imagem img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+section.descrição {
+    width: 60%;
+    margin: 50px;
+}
+
+div.parte-de-cima p {
+    margin: 20px 0px;
+    color: var(--Grayish-Blue);
+}
+
+div.parte-de-cima h1 {
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+div.perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  
+}
+
+div.nome-imagem {
+    display: flex;
+}
+
+div.perfil img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+div.nome p {
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+}
+
+div.nome span {
+    color: var(--Grayish-Blue);
+}
+
+button.btn {
+    border-radius: 50%;
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--Very-Dark-Grayish-Blue);
+}
+
+button.btn img {
+    display: block;
+    width: 100%;
+}
+
+div.balão {
+    background-color: var(--Very-Dark-Grayish-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 300px;
+    position: absolute;
+    right: -135px;
+    top: -70px;
+    border-radius: 10px;
+
+}
+
+div.balão::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: var(--Very-Dark-Grayish-Blue) transparent transparent transparent;
+}
+
+div.balão p {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--Desaturated-Dark-Blue);
+
+}
+
+div.balão a i {
+    font-size: 25px;
+    color: white;
+    margin-left: 20px;
+}
+
 
 .attribution { 
     font-size: 11px; 

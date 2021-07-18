@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/a8a0b729c0.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Article preview component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
   <main class="cartão">
-    <img src="images/drawers.jpg" alt="drawers">
+    <div class="imagem">
+      <img src="images/drawers.jpg" alt="drawers">
+    </div>
     <section class="descrição">
       <div class="parte-de-cima">
         <h1>
@@ -25,20 +28,22 @@
         </p>
       </div>
       <div class="perfil">
-        <img src="" alt="">
-        <div class="nome">
-          <p>Michelle Appleton</p>
-          <span>28 Jun 2020</span>
+        <div class="nome-imagem">
+          <img src="images/avatar-michelle.jpg" alt="Michelle">
+          <div class="nome">
+            <p>Michelle Appleton</p>
+            <span>28 Jun 2020</span>
+          </div>
         </div>
         <button class="btn">
           <img src="images/icon-share.svg" alt="icon-share">
         </button>
         <div class="balão">
           <p>Share</p>
-          <a href="#"><img src="images/icon-facebook.svg" alt="icon-facebook"></a>
-          <a href="#"><img src="images/icon-twitter.svg" alt="icon-twitter"></a>
-          <a href="#"><img src="images/icon-pinterest.svg" alt="icon-pinterest"></a>
-        </div>
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+         </div>
       </div>
     </section>
   </main>
