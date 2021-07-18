@@ -90,7 +90,7 @@ button.btn {
     padding: 7px;
     border: none;
     cursor: pointer;
-    background-color: var(--Very-Dark-Grayish-Blue);
+    background-color: var(--Desaturated-Dark-Blue);
 }
 
 button.btn img {
@@ -143,4 +143,68 @@ div.balão a i {
 }
 .attribution a { 
         color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 900px ) {
+    body {
+        display: block;
+    }
+    main.cartão {
+        margin: 30px auto;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    div.imagem {
+        width: 100%;
+    }
+
+    div.imagem img {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+    }
+
+    section.descrição {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        
+    }
+
+    section.descrição p,  section.descrição h1 {
+        margin: 20px;
+    }
+
+    div.perfil {
+        width: 100%;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    div.nome-imagem {
+        align-items: center;
+    }
+
+    div.nome p {
+        margin:0px;
+    }
+
+    div.balão {
+        display: none;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    button.btn {
+        position: relative;
+        z-index: 1;
+    }
+
+    div.balão::after {
+        display: none;
+    }
 }
